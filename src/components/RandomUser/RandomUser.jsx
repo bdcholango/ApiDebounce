@@ -38,14 +38,14 @@ const RandomUser = () => {
   };
 
    // Crear una versión debounced de fetchUser
-  const debouncedFetchUser = debounce(fetchUser, 2000);
+  const debouncedFetchUser = debounce(fetchUser, 200);
 
   return (
     <div>
       
       {user ? (
         <div>
-          <h1>User Info</h1>
+          <h1>User Info </h1>
           <img src={user.picture} alt="User" />
           <p>Name: {user.name}</p>
           <p>Email: {user.email}</p>
